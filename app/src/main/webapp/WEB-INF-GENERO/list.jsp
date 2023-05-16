@@ -14,8 +14,7 @@
         <table class="table">
             <tr>
                 <th>Id</th>
-                <th>Título</th>
-                <th>ISBN</th>
+                <th>Nome</th>
             </tr>
             <c:forEach var="item" items="${Genero}">
                 <tr>
