@@ -4,24 +4,23 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Livros</title>
+        <title>Genero</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     </head>
     <body>
         <div class="container">
-        <h1>Livros</h1>
-        <a href="/insert" class="btn btn-primary">Novo Livro</a>
+        <h1>Genero</h1>
+        <a href="/insert" class="btn btn-primary">Novo Genero</a>
         <table class="table">
             <tr>
                 <th>Id</th>
                 <th>Título</th>
                 <th>ISBN</th>
             </tr>
-            <c:forEach var="item" items="${livros}">
+            <c:forEach var="item" items="${Genero}">
                 <tr>
                     <td>${item.id}</td>
-                    <td>${item.titulo}</td>
-                    <td>${item.isbn}</td>
+                    <td>${item.nome}</td>
                     
                     <td>
                         <a href="/update?id=${item.id}" class="btn btn-warning">Editar</a>
